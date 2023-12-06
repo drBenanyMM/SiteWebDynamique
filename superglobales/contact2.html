@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Complet</title>
+</head>
+<body>
+
+    <h2>Mon Formulaire Complet</h2>
+
+    <form action="" method="POST">
+
+        <!-- Champ de texte -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <!-- Champ de mot de passe -->
+        <label for="motdepasse">Mot de passe :</label>
+        <input type="password" id="motdepasse" name="motdepasse" required>
+
+        <!-- Zone de texte -->
+        <label for="commentaire">Commentaire :</label>
+        <textarea id="commentaire" name="commentaire" rows="4" cols="50"></textarea>
+
+        <!-- Menu déroulant (Sélection) -->
+        <label for="pays">Pays :</label>
+        <select id="pays" name="pays">
+            <option value="france">France</option>
+            <option value="espagne">Espagne</option>
+            <option value="italie">Italie</option>
+        </select>
+
+        <!-- Boutons radio -->
+        <p>Genre :</p>
+        <input type="radio" id="homme" name="genre" value="homme">
+        <label for="homme">Homme</label>
+        <input type="radio" id="femme" name="genre" value="femme">
+        <label for="femme">Femme</label>
+
+        <!-- Cases à cocher -->
+        <p>Intérêts :</p>
+        <input type="checkbox" id="sport" name="interets[]" value="sport">
+        <label for="sport">Sport</label>
+        <input type="checkbox" id="lecture" name="interets[]" value="lecture">
+        <label for="lecture">Lecture</label>
+        <input type="checkbox" id="voyage" name="interets[]" value="voyage">
+        <label for="voyage">Voyage</label>
+
+        <!-- Bouton de soumission -->
+        <input type="submit" value="Envoyer">
+
+    </form>
+
+</body>
+</html>
